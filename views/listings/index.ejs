@@ -9,5 +9,11 @@
     <h3>
         All listings are available here 
     </h3>
+
 </body>
 </html>
+<ul>
+    <%for(let listings of allListings){%>
+        <li><a href="/listings/<%=listings.id%>"><%=listings.title%></a></li>
+    <%}%>
+</ul>
